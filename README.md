@@ -5,7 +5,7 @@ This repository contains the source code for the official website of <strong>Mar
 </p>
 
 <p>
-🔗 <a href="https://samuelcgoebel.github.io/Theraphie_muc/" target="_blank">Visit Live Website</a>
+🔗 <a href="https://samuelcgoebel.github.io/Therapie_muc/" target="_blank">Visit Live Website</a>
 </p>
 
 ---

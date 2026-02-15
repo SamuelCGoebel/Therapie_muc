@@ -17,7 +17,7 @@ It is designed to be clean, accessible, and easy to navigate for prospective cli
 ## Tech Stack
 - HTML  
 - CSS  
-- JavaScript  
+
 
 ## Purpose
 This project serves as a professional web presence and informational platform.

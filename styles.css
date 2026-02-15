@@ -79,6 +79,10 @@ body {
     gap: 2.5rem;
 }
 
+.nav-menu > li {
+    display: flex; /* Only direct children are flex */
+}
+
 .nav-menu a {
     text-decoration: none;
     color: var(--text-dark);

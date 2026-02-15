@@ -16,7 +16,16 @@
             <div class="nav-right">
                 <ul class="nav-menu">
                     <li><a href="#home">Start</a></li>
-                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li class="dropdown">
+                        <a href="#leistungen">Leistungen</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#psychotherapie">Psychotherapie</a></li>
+                            <li><a href="#life-coaching">Life Coaching</a></li>
+                            <li><a href="#klangtherapie">Klangtherapie</a></li>
+                            <li><a href="#hypnose">Hypnose</a></li>
+                            <li><a href="#akupunktur">Akupunktur</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#ueber-mich">Über mich</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
@@ -28,60 +37,55 @@
     <section id="home" class="hero">
         <div class="hero-image-overlay"></div>
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">Raum für</span>
-                    <span class="title-line delay-1">Veränderung</span>
-                </h1>
-                <p class="hero-subtitle">Psychologische Begleitung in München</p>
-            </div>
-        </div>
-        <div class="hero-background">
+            <h1 class="hero-title">
+                <span class="title-line">Raum für</span>
+                <span class="title-line delay-1">Veränderung</span>
+            </h1>
+            <p class="hero-subtitle">Psychologische Begleitung in München</p>
         </div>
     </section>
 
     <section id="leistungen" class="services">
-        <div class="services-background-image"></div>
         <div class="container">
             <h2 class="section-title">Meine Leistungen</h2>
             <p class="section-intro">Individuelle Begleitung auf Ihrem Weg zu mehr Wohlbefinden und persönlicher Entwicklung</p>
             
             <div class="services-grid">
-                <div class="service-card card-1">
+                <div class="service-card card-1" id="psychotherapie">
                     <div class="service-image">
-                    <img src="walk_woods.jpeg" alt="Psychotherapie">
+                        <img src="walk_woods.jpeg" alt="Psychotherapie">
                     </div>
-                <h3 class="service-title">Psychotherapie</h3>
-                <p class="service-description">Professionelle therapeutische Unterstützung bei psychischen Belastungen, Ängsten, Depressionen und Lebenskrisen. Ein geschützter Raum für Heilung und Wachstum.</p>
-</div>
+                    <h3 class="service-title">Psychotherapie</h3>
+                    <p class="service-description">Professionelle therapeutische Unterstützung bei psychischen Belastungen, Ängsten, Depressionen und Lebenskrisen. Ein geschützter Raum für Heilung und Wachstum.</p>
+                </div>
 
-                <div class="service-card card-2">
+                <div class="service-card card-2" id="life-coaching">
                     <div class="service-image">
-                    <img src="seaside_people.jpeg" alt="Psychotherapie">
+                        <img src="seaside_people.jpeg" alt="Life Coaching">
                     </div>
                     <h3 class="service-title">Life Coaching</h3>
                     <p class="service-description">Begleitung bei beruflicher Neuorientierung, Zielfindung und persönlicher Weiterentwicklung. Gemeinsam entwickeln wir Strategien für Ihre Zukunft.</p>
                 </div>
 
-                <div class="service-card card-3">
+                <div class="service-card card-3" id="klangtherapie">
                     <div class="service-image">
-                    <img src="waterfall.jpeg" alt="Psychotherapie">
+                        <img src="waterfall.jpeg" alt="Klangtherapie">
                     </div>
                     <h3 class="service-title">Klangtherapie</h3>
                     <p class="service-description">Heilsame Klänge und Schwingungen zur tiefen Entspannung, Stressreduktion und Harmonisierung von Körper und Geist.</p>
                 </div>
 
-                <div class="service-card card-4">
+                <div class="service-card card-4" id="hypnose">
                     <div class="service-image">
-                    <img src="swan_lake.jpeg" alt="Psychotherapie">
+                        <img src="swan_lake.jpeg" alt="Hypnose">
                     </div>
                     <h3 class="service-title">Hypnose</h3>
                     <p class="service-description">Hypnotherapeutische Arbeit für nachhaltige Veränderungen im Unterbewusstsein. Effektiv bei Ängsten, Gewohnheiten und emotionalen Blockaden.</p>
                 </div>
 
-                <div class="service-card card-5">
+                <div class="service-card card-5" id="akupunktur">
                     <div class="service-image">
-                    <img src="ground_flowers.jpeg" alt="Psychotherapie">
+                        <img src="ground_flowers.jpeg" alt="Akupunktur">
                     </div>
                     <h3 class="service-title">Akupunktur</h3>
                     <p class="service-description">Traditionelle Chinesische Medizin zur Behandlung von psychosomatischen Beschwerden und zur Förderung der Selbstheilungskräfte.</p>
@@ -119,7 +123,7 @@
                     <div class="contact-item">
                         <h3>Terminvereinbarung</h3>
                         <p>Telefon: +49 (0) 89 XXX XXXXX</p>
-                        <p>E-Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7b0b091a0312083b1e031a160b171e551f1e">[email&#160;protected]</a></p>
+                        <p>E-Mail: kontakt@praxis-muenchen.de</p>
                     </div>
                     <div class="contact-item">
                         <h3>Sprechzeiten</h3>
@@ -140,10 +144,10 @@
         </div>
     </section>
 
-<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Psychologische Praxis München. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 Psychologische Praxis München. Alle Rechte vorbehalten.</p>
                 <div class="footer-links">
                     <a href="#impressum">Impressum</a>
                     <a href="#datenschutz">Datenschutz</a>

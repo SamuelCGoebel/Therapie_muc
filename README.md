@@ -24,3 +24,17 @@ This project serves as a professional web presence and informational platform.
 
 ## Author
 Developed by Samuel Göbel
+
+
+
+## Copyright & Usage Notice
+
+© Maria Yvonne Pestano. All rights reserved.
+
+All photographs and visual media contained in this repository and on the associated website are the original work of Maria Yvonne Pestano and are protected by copyright law.
+
+No image or media file may be copied, reproduced, distributed, modified, published, or used in any form without prior written permission from the copyright holder.
+
+Unauthorized use is strictly prohibited.
+
+---

@@ -145,6 +145,7 @@ body {
     z-index: 1000;
     list-style: none;
     margin: 0;
+    display: block;
 }
 
 .dropdown:hover .dropdown-menu {

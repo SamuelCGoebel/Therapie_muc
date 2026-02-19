@@ -139,7 +139,31 @@ body {
 
 .dropdown-label {
     cursor: pointer;
-    display: inline-block;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.dropdown-label::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.dropdown-label:hover {
+    color: var(--primary-color);
+}
+
+.dropdown-label:hover::after {
+    width: 100%;
 }
 
 .dropdown-menu {
@@ -180,7 +204,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Desktop: hover works */
+/* Desktop: hover works, dropdown visible */
 @media (min-width: 769px) {
     .dropdown:hover .dropdown-menu {
         opacity: 1;
@@ -189,12 +213,10 @@ body {
     }
 }
 
-/* Mobile: checkbox toggle */
+/* Mobile: hide dropdown completely */
 @media (max-width: 768px) {
-    .dropdown-checkbox:checked ~ .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+    .dropdown-menu {
+        display: none;
     }
 }
 /* Hero Section */

@@ -67,6 +67,11 @@ body {
     font-weight: 600;
     color: var(--primary-color);
     letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: none;
 }
 .nav-menu {
     display: flex;
@@ -565,6 +570,62 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px var(--shadow);
 }
+/* Legal Pages (Impressum, Datenschutz) */
+.legal-page {
+    padding: 12rem 0 8rem 0;
+    background: var(--bg-white);
+    min-height: 100vh;
+}
+
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.legal-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.legal-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.legal-content p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.legal-content ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.legal-content li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.legal-content a:hover {
+    color: var(--accent-color);
+}
+
+.legal-content strong {
+    color: var(--text-dark);
+}
+
 
 /* Footer */
 .footer {

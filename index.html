@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psychologische Praxis München | Therapie & Coaching</title>
+    <title>Psychologische Praxis München | Psychologische Begleitung & Coaching</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +12,23 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Psychologische Praxis</div>
+            <div class="logo">Maria Yvonne Mind Coaching</div>
             <div class="nav-right">
                 <ul class="nav-menu">
                     <li><a href="#home">Start</a></li>
-                    <li class="dropdown">
-                        <a href="#leistungen">Leistungen</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#psychotherapie">Psychotherapie</a></li>
-                            <li><a href="#life-coaching">Life Coaching</a></li>
-                            <li><a href="#klangtherapie">Klangtherapie</a></li>
-                            <li><a href="#hypnose">Hypnose</a></li>
-                            <li><a href="#akupunktur">Akupunktur</a></li>
-                        </ul>
-                    </li>
+<li class="dropdown">
+    <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
+    <label for="dropdown-toggle" class="dropdown-label">
+        <a href="#leistungen">Leistungen</a>
+    </label>
+    <ul class="dropdown-menu">
+        <li><a href="#psychotherapie">Psychologische Beratung</a></li>
+        <li><a href="#life-coaching">Life Coaching</a></li>
+        <li><a href="#klangtherapie">Klangtherapie</a></li>
+        <li><a href="#hypnose">Hypnose</a></li>
+        <li><a href="#akupunktur">Akupunktur</a></li>
+    </ul>
+</li>
                     <li><a href="#ueber-mich">Über mich</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
@@ -55,7 +58,7 @@
                     <div class="service-image">
                         <img src="walk_woods.jpeg" alt="Psychotherapie">
                     </div>
-                    <h3 class="service-title">Psychotherapie</h3>
+                    <h3 class="service-title">Psychologische Beratung</h3>
                     <p class="service-description">Professionelle therapeutische Unterstützung bei psychischen Belastungen, Ängsten, Depressionen und Lebenskrisen. Ein geschützter Raum für Heilung und Wachstum.</p>
                 </div>
 
@@ -99,9 +102,34 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2 class="section-title">Über mich</h2>
-                    <p>Mit langjähriger Erfahrung in der psychologischen Betreuung begleite ich Menschen auf ihrem individuellen Weg zu mehr Lebensqualität und innerem Gleichgewicht.</p>
-                    <p>Mein ganzheitlicher Ansatz verbindet klassische Psychotherapie mit bewährten alternativen Heilmethoden. Jeder Mensch ist einzigartig – daher gestalte ich die Behandlung individuell nach Ihren Bedürfnissen.</p>
-                    <p>In meiner Praxis im Herzen Münchens finden Sie einen geschützten Raum für Ihre persönliche Entwicklung.</p>
+  <p>
+    Ich bin Psychologin mit langjähriger Erfahrung in psychologischer Beratung, Life Coaching und klinisch-therapeutischer Praxis. Seit vielen Jahren begleite ich Menschen professionell auf ihrem individuellen Entwicklungsweg – mit dem Ziel, innere Stabilität zu stärken, persönliche Ressourcen zu aktivieren und nachhaltige Veränderungen zu ermöglichen.
+  </p>
+
+  <p>
+    Meine berufliche Laufbahn umfasst umfassende praktische Arbeit im psychosomatischen und psychiatrischen Bereich sowie in der Begleitung von Menschen in belastenden Lebensphasen. Dabei habe ich mit unterschiedlichsten Anliegen gearbeitet, darunter emotionale Krisen, Stress- und Anpassungsbelastungen, psychosomatische Beschwerden sowie persönliche und zwischenmenschliche Herausforderungen.
+  </p>
+
+  <p>
+    Ich verbinde wissenschaftlich fundierte psychologische Methoden mit wirksamen Coaching- und Achtsamkeitsansätzen. Dazu gehören verhaltenstherapeutische und systemische Strategien, hypnotherapeutische Elemente, Stressregulationstechniken sowie körperorientierte Verfahren. Meine Arbeitsweise ist klar strukturiert, lösungsorientiert und gleichzeitig von Empathie, Wertschätzung und echter Präsenz geprägt.
+  </p>
+
+  <p>
+    Neben meiner psychologischen Qualifikation verfüge ich über zusätzliche Ausbildungen in Achtsamkeit, Entspannungsverfahren, Coachingmethoden und palliativ-psychologischer Begleitung. Diese Kombination ermöglicht es mir, Menschen ganzheitlich zu unterstützen – mental, emotional und körperlich.
+  </p>
+
+  <p>
+    Mein Ansatz richtet sich an alle, die aktiv etwas verändern möchten: mehr Klarheit gewinnen, Blockaden lösen, Entscheidungen treffen, Krisen bewältigen oder ihr Leben bewusster und erfüllter gestalten.
+  </p>
+
+  <p>
+    Ich arbeite individuell, diskret und bedarfsorientiert – persönlich, telefonisch oder online.
+  </p>
+
+    <p>
+    Ich freue mich darauf, Sie in einem unverbindlichen Erstgespräch kennenzulernen – wahlweise per Video oder telefonisch.
+
+  </p>
                 </div>
                 <div class="about-image">
                     <img src="standing_with_chaos.jpeg" alt="Über mich" class="about-photo">
@@ -110,7 +138,7 @@
         </div>
     </section>
 
-    <section id="kontakt" class="contact">
+<section id="kontakt" class="contact">
         <div class="container">
             <h2 class="section-title">Kontakt</h2>
             <div class="contact-content">
@@ -137,6 +165,14 @@
                         <input type="email" name="email" placeholder="Ihre E-Mail" class="form-input" required>
                         <input type="tel" name="phone" placeholder="Ihre Telefonnummer" class="form-input">
                         <textarea name="message" placeholder="Ihre Nachricht" rows="5" class="form-input" required></textarea>
+                        
+                        <div class="form-consent">
+                            <input type="checkbox" id="privacy-consent" name="consent" required>
+                            <label for="privacy-consent">
+                                Ich habe die <a href="#datenschutz">Datenschutzerklärung</a> zur Kenntnis genommen und stimme der Verarbeitung meiner Daten zu.*
+                            </label>
+                        </div>
+                        
                         <button type="submit" class="form-button">Nachricht senden</button>
                     </form>
                 </div>
@@ -147,7 +183,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 Psychologische Praxis München. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 Maria Yvonne Mind Coaching München. Alle Rechte vorbehalten.</p>
                 <div class="footer-links">
                     <a href="#impressum">Impressum</a>
                     <a href="#datenschutz">Datenschutz</a>

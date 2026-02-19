@@ -133,6 +133,15 @@ body {
     position: relative;
 }
 
+.dropdown-checkbox {
+    display: none;
+}
+
+.dropdown-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -150,12 +159,6 @@ body {
     list-style: none;
     margin: 0;
     display: block;
-}
-
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
 }
 
 .dropdown-menu li {
@@ -177,6 +180,23 @@ body {
     color: var(--accent-color);
 }
 
+/* Desktop: hover works */
+@media (min-width: 769px) {
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile: checkbox toggle */
+@media (max-width: 768px) {
+    .dropdown-checkbox:checked ~ .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
 /* Hero Section */
 .hero {
     position: relative;
@@ -434,6 +454,29 @@ body {
 .contact {
     padding: 8rem 0;
     background: var(--bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(stones_water.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-content {
@@ -491,6 +534,37 @@ body {
 
 .form-input::placeholder {
     color: var(--text-light);
+}
+
+.form-consent {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin: 0.5rem 0;
+}
+
+.form-consent input[type="checkbox"] {
+    margin-top: 0.25rem;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.form-consent label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+.form-consent label a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.form-consent label a:hover {
+    color: var(--accent-color);
 }
 
 .form-button {

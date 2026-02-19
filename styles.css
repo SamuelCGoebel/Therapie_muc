@@ -38,7 +38,6 @@ body {
     box-shadow: 0 2px 20px var(--shadow);
     animation: slideDown 0.6s ease;
 }
-
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -49,7 +48,6 @@ body {
         opacity: 1;
     }
 }
-
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -58,13 +56,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-right {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-
 .logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
@@ -72,17 +68,14 @@ body {
     color: var(--primary-color);
     letter-spacing: 0.5px;
 }
-
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2.5rem;
 }
-
 .nav-menu > li {
     display: flex; /* Only direct children are flex */
 }
-
 .nav-menu a {
     text-decoration: none;
     color: var(--text-dark);
@@ -91,7 +84,6 @@ body {
     position: relative;
     transition: color 0.3s ease;
 }
-
 .nav-menu a::after {
     content: '';
     position: absolute;
@@ -102,15 +94,12 @@ body {
     background: var(--accent-color);
     transition: width 0.3s ease;
 }
-
 .nav-menu a:hover {
     color: var(--primary-color);
 }
-
 .nav-menu a:hover::after {
     width: 100%;
 }
-
 .nav-button {
     display: inline-block;
     padding: 0.7rem 1.8rem;
@@ -121,49 +110,18 @@ body {
     font-size: 0.95rem;
     transition: all 0.3s ease;
 }
-
 .nav-button:hover {
     background: var(--accent-color);
     transform: translateY(-1px);
     box-shadow: 0 5px 15px var(--shadow);
 }
-
 /* Dropdown Menu */
 .dropdown {
     position: relative;
 }
 
-.dropdown-checkbox {
-    display: none;
-}
-
-.dropdown-label {
+.dropdown-toggle {
     cursor: pointer;
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 400;
-    font-size: 0.95rem;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.dropdown-label::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-.dropdown-label:hover {
-    color: var(--primary-color);
-}
-
-.dropdown-label:hover::after {
-    width: 100%;
 }
 
 .dropdown-menu {
@@ -204,7 +162,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Desktop: hover works, dropdown visible */
+/* Desktop: hover shows dropdown */
 @media (min-width: 769px) {
     .dropdown:hover .dropdown-menu {
         opacity: 1;
@@ -213,13 +171,10 @@ body {
     }
 }
 
+/* Mobile: hide dropdown, make it a regular link */
 @media (max-width: 768px) {
-    .dropdown-label {
-        cursor: pointer;
-    }
-    
-    .dropdown-label:active {
-        color: var(--primary-color);
+    .dropdown-menu {
+        display: none;
     }
 }
 /* Hero Section */

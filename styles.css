@@ -213,10 +213,13 @@ body {
     }
 }
 
-/* Mobile: hide dropdown completely */
 @media (max-width: 768px) {
-    .dropdown-menu {
-        display: none;
+    .dropdown-label {
+        cursor: pointer;
+    }
+    
+    .dropdown-label:active {
+        color: var(--primary-color);
     }
 }
 /* Hero Section */
